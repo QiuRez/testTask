@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./libs/jquery/jquery-3.7.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="./libs/swiper/swiper-bundle.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="application/javascript" src="js/app.js"></script>
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="header__background-blur"></div>
+	<header>
+		<div class="logo">
+			<img src="./img/dist/logo.png" alt="">
+		</div>
+		<div class="burgerToggle">
+			<div class="lines"></div>
+		</div>
+		<div class="nav-tel">
+			<nav>
+				<a href="">A la carte</a>
+				<a href="">Wijnkaart</a>
+				<a href="">Lunchmenu</a>
+				<a href="">Contact</a>
+			</nav>
+			<div class="tel-social">
+				<a href="tel:+3292825725" class="tel-number">+32 9 282 57 25</a>
+				<div class="social-buttons">
+					<a href=""><img src="./img/dist/social-button-Fb.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Lg.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Tw.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Yt.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="modal-reserve" class="modal-reserve">
+		<div class="modal-reserve-form">
+			<form action="" method="get" class="reserve-form">
+				<label>
+					First name:
+					<input type="text" name="firstname" id="reserve-firstname">
+				</label>
+				<label>
+					Last name:
+					<input type="text" name="lastname" id="reserve-lastname">
+				</label>
+				<label>
+					Phone number:
+					<input type="text" name="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="reserve-phone">
+				</label>
+				<input type="submit" value="Reserve">
+			</form>
+		</div>
+	</div>
+
+	<article>
+		<div class="main-info">
+			<h3>OPEN EVERYDAY 6AM - 9PM</h3>
+			<h1>A bad day with lunch is better than <span>a good day without it.</span></h1>
+			<div class="reserve">
+				<a href="#modal-reserve" rel="modal:open" class="modal-reserve-open">Reserve a table</a>
+				<div class="social-media-buttons">
+					<a href=""><img src="./img/dist/social-button-Fb.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Lg.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Tw.svg" alt=""></a>
+					<a href=""><img src="./img/dist/social-button-Yt.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="restaurant-menu">
+			<div class="menu-list">
+				<div class="menu-item">
+					<p id="day">Woensdag 12/01</p>
+					<div class="food">
+						<p>Salade met Serrano</p>
+						<div class="markers">
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+						</div>
+						<p>Steak Tartaar</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p id="day">Donderdag 13/01</p>
+					<div class="food">
+						<p>Toast Roquefort</p>
+						<div class="markers">
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+						</div>
+						<p>Penne met Kip en Prei</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p id="day">Vrijdag 14/01</p>
+					<div class="food">
+						<p>Verrassing van de Chef</p>
+						<div class="markers">
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+						</div>
+						<p>Penne met Kip en Prei</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p id="day">Vrijdag 15/01</p>
+					<div class="food">
+						<p>Verrassing van de Chef</p>
+						<div class="markers">
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+						</div>
+						<p>Penne met Kip en Prei</p>
+					</div>
+				</div>
+				<div class="menu-item">
+					<p id="day">Vrijdag 16/01</p>
+					<div class="food">
+						<p>Verrassing van de Chef</p>
+						<div class="markers">
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+							<p>&#8226;</p>
+						</div>
+						<p>Penne met Kip en Prei</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-img">
+				<img src="./img/dist/menu-image-1.png" alt="">
+				<img src="./img/dist/menu-image-2.png" alt="">
+			</div>
+		</div>
+		<div class="feedback">
+			<div class="feedback-control">
+				<div class="feedback-swiper swiper">
+					<div class="feedback-main swiper-wrapper">
+						<div class="feedback-slide swiper-slide">
+							<img src="./img/dist/galki.svg" alt="">
+							<h2>Goede service, lekker eten, toffe ambiance</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+								invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+								et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+							</p>
+							<h3 id="feedback-author">ALAIN HEYNDRICKX</h3>
+						</div>
+						<div class="feedback-slide swiper-slide">
+							<img src="./img/dist/galki.svg" alt="">
+							<h2>Goede service, lekker eten, toffe ambiance</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+								invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+								et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+							</p>
+							<h3 id="feedback-author">ALAIN HEYNDRICKX</h3>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</article>
+</body>
+</html>
